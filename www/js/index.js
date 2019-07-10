@@ -5,7 +5,7 @@
 
     function onDeviceReady(){
         document.addEventListener("backbutton", onBackKeyDown.bind(this), false);
-
+        alert('prueba');
     };
 
     function onBackKeyDown(){
