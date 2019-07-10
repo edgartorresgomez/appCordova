@@ -10,6 +10,7 @@
 
     function onBackKeyDown(){
         navigator.notification.alert("boton bajar volumen");
+        notification.alert('prueba con boton abajo');
     };
 
 })();
