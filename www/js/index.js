@@ -30,15 +30,18 @@ var app = {
     onDeviceReady: function() {
         this.receivedEvent('deviceready');
         document.addEventListener("backbutton", onBackKeyDown, false);
+        document.addEventListener("volumedownbutton", onVolumeDownKeyDown, false);
     
     },
 
-
+    onVolumeDownKeyDown:function(){
+        alert("boton bajar volumen");
+    },
 
     onBackKeyDown: function() {
-    // Handle the back button
-    alert("boton atras");
-},
+        // Handle the back button
+        alert("boton atras");
+    },
 
     // Update DOM on a Received Event
     receivedEvent: function(id) {
