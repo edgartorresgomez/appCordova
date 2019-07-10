@@ -18,35 +18,44 @@
 
     <header>
         
-
-
-
-        <div style="height: 5rem; position: relative; text-align: left; top: -20px;"><br>
-            <style>
-                .drawer+.demo {
-                    position: absolute;
-                    height: 5rem;
-                    z-index: 0;
-                    top: 0;
-                    right: calc(0rem - 320px - 0.5rem);
-                    padding: 0.5rem;
-                    text-align: left;
-                }
-
-                [type="checkbox"]:checked.drawer+.demo {
-                    z-index: 1001;
-                    margin-right: 0.5rem;
-                }
-            </style>
-            <label for="demo-toggle" class="button drawer-toggle persistent doc"></label>
-            <input type="checkbox" id="demo-toggle" class="drawer persistent">
-            <div class="demo doc">
-                <label for="demo-toggle" class="drawer-close doc"></label>
-                <a href="#" class="doc">Home</a><br> 
-                <a href="#" class="doc">News</a><br>
-                <a href="#" class="doc">About</a><br> 
-                <a href="#" class="doc">Contact</a><br></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-1">
+                        <div style="height: 5rem; position: relative; text-align: left; top: -25px;"><br>
+                            <style>
+                                .drawer+.demo {
+                                    position: absolute;
+                                    height: 5rem;
+                                    z-index: 0;
+                                    top: 0;
+                                    right: calc(0rem - 320px - 0.5rem);
+                                    padding: 0.5rem;
+                                    text-align: left;
+                                }
+                
+                                [type="checkbox"]:checked.drawer+.demo {
+                                    z-index: 1001;
+                                    margin-right: 0.5rem;
+                                }
+                            </style>
+                            <label for="demo-toggle" class="button drawer-toggle persistent doc"></label>
+                            <input type="checkbox" id="demo-toggle" class="drawer persistent">
+                            <div class="demo doc">
+                                <label for="demo-toggle" class="drawer-close doc"></label>
+                                <a href="#" class="doc">Home</a><br> 
+                                <a href="#" class="doc">News</a><br>
+                                <a href="#" class="doc">About</a><br> 
+                                <a href="#" class="doc">Contact</a><br></div>
+                        </div>
+                </div>  
+                <div class="col-sm-11">
+                    <h2>App Edgar</h2>
+                </div>
+            </div>
         </div>
+
+
+        
 
 
     </header>
@@ -95,6 +104,7 @@
             <footer>Pie de pagina</footer>
 
             <link rel="stylesheet" href="css/mini-default.min.css" />
+            <script type="text/javascript" src="cordova.js"></script>
 
 </body>
 
