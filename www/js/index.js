@@ -20,6 +20,7 @@ var app = {
     // Application Constructor
     initialize: function() {
         document.addEventListener('deviceready', this.onDeviceReady.bind(this), false);
+        
     },
 
     // deviceready Event Handler
@@ -28,7 +29,16 @@ var app = {
     // 'pause', 'resume', etc.
     onDeviceReady: function() {
         this.receivedEvent('deviceready');
+        document.addEventListener("backbutton", onBackKeyDown, false);
+    
     },
+
+
+
+    onBackKeyDown: function() {
+    // Handle the back button
+    alert("boton atras");
+},
 
     // Update DOM on a Received Event
     receivedEvent: function(id) {
@@ -45,6 +55,7 @@ var app = {
     
 
 };
+
 
 
 
