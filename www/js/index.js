@@ -1,5 +1,5 @@
 
-(function () {
+(()=> {
     
     document.addEventListener("deviceready", onDeviceReady, false);
 
