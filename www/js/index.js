@@ -10,8 +10,8 @@
     
     function onBackKeyDown(){
         alert("bien atras");
+        window.opener = self;
         window.close();
-        Navigator.close();
         alert("bien atras no cerro");
 
         
