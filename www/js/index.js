@@ -9,8 +9,9 @@
     };
     
     function onBackKeyDown(){
-        window.close();
         alert("bien atras");
+        window.close();
+        alert("bien atras no cerro");
 
         
     }
