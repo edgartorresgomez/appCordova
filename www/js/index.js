@@ -9,8 +9,10 @@
     };
     
     function onBackKeyDown(){
-        alert("bien atras");
         window.close();
+        alert("bien atras");
+
+        
     }
 
 })();
