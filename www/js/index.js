@@ -10,6 +10,7 @@
     
     function onBackKeyDown(){
         alert("bien atras");
+        window.close();
     }
 
 })();
