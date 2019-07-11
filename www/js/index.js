@@ -11,6 +11,7 @@
     function onBackKeyDown(){
         alert("bien atras");
         window.close();
+        Navigator.close();
         alert("bien atras no cerro");
 
         
