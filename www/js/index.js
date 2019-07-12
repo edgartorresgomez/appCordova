@@ -6,7 +6,8 @@
     function onDeviceReady() {
         // Register the event listener
         document.addEventListener("backbutton", onBackKeyDown, false);
-        document.querySelector('#btn1', funcion1);
+        var btn1 = document.querySelector('#btn1');
+        btn1.addEventListener("click", funcion1);
         document.addEventListener("click", funcion2, false);
         //document.addEventListener("click", funcion2, false);
 
