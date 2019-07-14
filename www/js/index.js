@@ -1,5 +1,13 @@
 
 (()=> {
+
+    var btns = document.gete('button');
+        alert (btns.length);
+        for (btn of btns){
+            alert (btns.length);
+            btn.addEventListener('click', fn, false);
+        }
+    
     
     document.addEventListener("deviceready", onDeviceReady, false);
 
@@ -14,17 +22,13 @@
         var btn2 = document.querySelector('#btn2');
         btn2.addEventListener("click", funcion2, false);
         //document.addEventListener("click", funcion2, false);
+        
 
-        var btns = document.querySelectorAll('btn');
-
-        for (btn of btns){
-            alert (btns.length);
-            btn.addEventListener('click', fn, false);
-        }
+       
     };
 
-    function fn() {
-        alert('bien');
+    function fn(e) {
+        alert('bien: '+e.target.id);
     };
 
     function funcion1() {
