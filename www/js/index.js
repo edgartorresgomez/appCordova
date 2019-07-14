@@ -1,12 +1,7 @@
 
 (()=> {
 
-    var btns = document.gete('button');
-        alert (btns.length);
-        for (btn of btns){
-            alert (btns.length);
-            btn.addEventListener('click', fn, false);
-        }
+    
     
     
     document.addEventListener("deviceready", onDeviceReady, false);
@@ -23,7 +18,12 @@
         btn2.addEventListener("click", funcion2, false);
         //document.addEventListener("click", funcion2, false);
         
-
+        var btns = document.querySelectorAll('button');
+        alert (btns.length);
+        for (i=0; i <= btns.length; i++){
+            alert (btns.length);
+            btn.addEventListener('click', fn, false);
+        }
        
     };
 
