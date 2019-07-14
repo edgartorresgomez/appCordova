@@ -15,7 +15,7 @@
         btn2.addEventListener("click", funcion2, false);
         //document.addEventListener("click", funcion2, false);
 
-        var btns = document.querySelectorAll('btn')
+        var btns = document.querySelectorAll('btn');
 
         for (btn of btns){
             alert (btns.length);
